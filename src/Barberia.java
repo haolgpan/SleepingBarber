@@ -7,7 +7,7 @@ public class Barberia {
         cadires = 4;
         clients = new LinkedList<>();
     }
-    public synchronized void tallarCabells(){
+    public void tallarCabells(){
         Client client;
         synchronized (clients){
             while(clients.size() == 0){
