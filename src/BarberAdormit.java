@@ -7,6 +7,7 @@ public class BarberAdormit {
         barber.start();
         Client client;
         //Generador de clients
+        //for(;;){
         for(int i = 0; i < 10; i++){
             try {
                 Thread.sleep((long) (Math.random()*5000)+2000);
