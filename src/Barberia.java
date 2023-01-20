@@ -44,7 +44,7 @@ public class Barberia {
             clients.offer(client);
             System.out.println("El client" + client.getName() + " s'asseu en una cadira.");
             System.out.println("En cua hi ha " + clients.size() + " pers.");
-            if(clients.size() == 1) clients.notifyAll();
+            if(clients.size() == 1) clients.notify();
         }
     }
 }
