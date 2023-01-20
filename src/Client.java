@@ -6,9 +6,6 @@ public class Client extends Thread{
     }
     @Override
     public void run(){
-        anarTallarCabells();
-    }
-    private void anarTallarCabells(){
         barberia.admissioClients(this);
     }
 }

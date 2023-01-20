@@ -2,7 +2,7 @@ import java.util.LinkedList;
 
 public class Barberia {
     int cadires;
-    LinkedList<Client> clients;
+    final LinkedList<Client> clients;
     public Barberia() {
         cadires = 4;
         clients = new LinkedList<>();
@@ -22,10 +22,11 @@ public class Barberia {
             System.out.println("Client avisa al Barber.");
             client = clients.poll();
         }
+        assert client != null;
         System.out.println("Tallant els cabells del client" + client.getName() + ".");
         long temps;
         try {
-            temps =(long) (Math.random()*8000)+5000;
+            temps =(long) (Math.random()*8000)+6000;
             Thread.sleep(temps);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);

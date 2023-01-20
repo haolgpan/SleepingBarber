@@ -5,8 +5,8 @@ public class Barber extends Thread{
     }
     @Override
     public void run(){
-        System.out.println("Barber entra treballar");
-        for(;;){
+        System.out.println("Barber entra treballar.");
+        for(;;) {
             barberia.tallarCabells();
         }
     }
