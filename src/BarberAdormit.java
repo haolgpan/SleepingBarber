@@ -1,4 +1,3 @@
-
 public class BarberAdormit {
     public static void main(String[] args) {
         Barberia barberia = new Barberia();
