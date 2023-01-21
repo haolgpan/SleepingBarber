@@ -19,7 +19,7 @@ public class Barberia {
                     e.printStackTrace();
                 }
             }
-            System.out.println("Client avisa al Barber.");
+            System.out.println("Client avisa al Barber, el Barber crida el client a la cadira.");
             client = clients.poll();
         }
         assert client != null;
